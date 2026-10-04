@@ -9,7 +9,7 @@ description: Use when the user explicitly asks to use a local knowledge library 
 
 ## 通道和触发
 
-- 分享物是这个 Skill 目录，不是 MCP 配置。朋友不需要安装、暴露或配置 `kb_*` MCP 工具。
+- 分享物是这个 Skill 目录，不是 MCP 配置。朋友不需要为使用本 Skill 安装、暴露或配置 MCP 工具。
 - 本 Skill 固定走本地 CLI。即使 Harness 同时提供 Knowledge MCP，也不要为本 Skill 修改 MCP 配置或混用两套通道。
 - 只有用户明确要求使用资料室、知识库、库中的书、入库、检索、阅读或写笔记时才触发；普通聊天不要开资料室。
 - Skill 被 Harness 加载，不等于 CLI 引擎已经安装。首次明确使用时，先完成“首次使用”流程，再执行资料操作。

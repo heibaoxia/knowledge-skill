@@ -1,6 +1,6 @@
 # knowledge-skill
 
-给人用，也给 agent 用的一份 Skill：让 agent 通过本地 `knowledge` CLI 使用自己的资料室。
+给人和 agent 用的本机资料室入口 Skill：让 agent 通过本地 `knowledge` CLI 使用自己的资料室。
 
 ## 先说结论
 
@@ -11,13 +11,13 @@
 - 允许首次使用时联网下载引擎和 Python 依赖；
 - 告诉 agent 已有知识库的绝对路径，或确认要新建的路径。
 
-这条路径不需要 Node.js，不需要 MCP 配置，也不会默认修改 PATH 或永久写入环境变量。
+这条路径默认通过本地 CLI 工作，不需要 Node.js 或 MCP 配置，也不会默认修改 PATH 或永久写入环境变量。
 
 ## 这是什么
 
 - **本仓库是一份 Skill**，核心文件是 `SKILL.md` 和 `bootstrap.py`；不包含引擎代码、书、笔记或密钥。
 - **引擎在另一个仓库**：[heibaoxia/knowledge-mcp](https://github.com/heibaoxia/knowledge-mcp)。bootstrap 会在用户目录下准备它。
-- **分享方式是 Skill，不是 MCP**：朋友不需要安装、暴露或配置 `kb_*` MCP 工具。
+- **分享方式是 Skill；MCP 是引擎的可选适配层**：朋友不需要为使用本 Skill 安装、暴露或配置 MCP 工具。
 - Python 需要 3.11 或更高版本。Node.js 不参与本 Skill。没有 Git 时，bootstrap 会回退到 GitHub ZIP 下载。
 
 ## 安装 Skill
